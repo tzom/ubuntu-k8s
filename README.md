@@ -5,15 +5,15 @@ This is useful to have a **shell** that also has **access to persistent storage*
 
 ### deploy ubuntu pods and a ask for a persistent nfs storage volume (persistent-volume-claim - short pvc):
 
-> kubectl apply -f unbuntu.yaml -n <namespace>
+> kubectl apply -f unbuntu.yaml -n ``<namespace>``
 
 ### check pods availability:
 
-> kubectl get pods -n <namespace>
+> kubectl get pods -n ``<namespace>``
 
 ### get the shell of a running ubuntu pod (i.e. use a specific pod-name): 
 
-> kubectl exec -n <namespace> -it <pod-name> -- /bin/bash
+> kubectl exec -n ``<namespace>`` -it ``<pod-name>`` -- /bin/bash
 
 should give you this:
 ```
